@@ -1,12 +1,8 @@
 import React from "react";
 
-function Button({ text = "button", clickListener }) {
+function Button({ text = "Click Me" }) {
     return (
-        <div
-            className="text-[12px] text-yellow-50 bg-red py-2 px-3 rounded-xl cursor-pointer
-             hover:bg-rose-500 hover:text-red mb-2"
-             onClick={clickListener}
-        >
+        <div className="text-[12px] md:text-[10px] text-white bg-custom-green py-6 px-36 rounded-xl cursor-pointer hover:bg-white hover:text-custom-green ">
             {text}
         </div>
     );
